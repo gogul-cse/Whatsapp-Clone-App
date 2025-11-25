@@ -1,6 +1,8 @@
-📱 WhatsApp Clone – Android App
+## 📱 WhatsApp Clone – Android App
 
-A real-time messaging application built with Kotlin, Firebase Firestore, Firebase Cloud Messaging (FCM), and Firebase Authentication, following MVVM Architecture and modern Android development practices.                                                                                                                                             🚀 Features
+### A real-time messaging application built with Kotlin, Firebase Firestore, Firebase Cloud Messaging (FCM), and Firebase Authentication, following MVVM Architecture and modern Android development practices.
+---
+## 🚀 Features
 🔐 Secure Authentication using Firebase Email/Phone Auth
 💬 Real-time messaging with Firestore
 🟢 Online/offline user presence
@@ -13,7 +15,7 @@ A real-time messaging application built with Kotlin, Firebase Firestore, Firebas
 🔄 Live updates without refresh
 🛠️ Tech Stack
 
-**Android** (Frontend)
+## Android (Frontend)
 Kotlin
 MVVM Architecture
 LiveData / StateFlow
@@ -21,7 +23,7 @@ ViewModel
 RecyclerView
 Coroutines
 
-**Firebase** (Backend)
+## Firebase (Backend)
 Firebase Authentication
 Cloud Firestore
 Firebase Cloud Messaging (FCM)
