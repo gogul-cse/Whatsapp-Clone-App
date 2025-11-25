@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/imageViewDeleteAllChats"
+        android:icon="@drawable/delete_icon"
+        android:title="Clear chat"
+        android:visible="false"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/clearCallLog"
+        android:icon="@drawable/delete_icon"
+        android:visible="false"
+        android:title="Clear call log" />
+    <item
+        android:id="@+id/settings"
+        android:title="Settings" />
+    <item
+        android:id="@+id/logoutAccount"
+        android:title="Logout" />
+</menu>

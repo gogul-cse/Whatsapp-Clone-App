@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chatActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#E2EEEF"
+        android:clickable="true"
+        android:fitsSystemWindows="true"
+        tools:context=".activity.MyMessagesChatActivity">
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/chatToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#00DCF8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/menu_item"
+            app:navigationIcon="@drawable/back_button">
+
+            <include
+                android:id="@+id/layoutToolBarChat"
+                layout="@layout/toolbar_chat"
+                app:layout_constraintTop_toBottomOf="@id/chatToolBar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMessages"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/lineraLayoutBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chatToolBar"
+            tools:listitem="@layout/item_messages_sent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lineraLayoutBox"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/searchbar_shape"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                >
+
+                <EditText
+                    android:id="@+id/editTextMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Message"
+                    android:inputType="textMultiLine"
+                    android:maxLines="4"/>
+
+                <ImageView
+                    android:id="@+id/addAttachment"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:padding="4dp"
+                    app:srcCompat="@drawable/attach_file" />
+
+                <ImageView
+                    android:id="@+id/takePhoto"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:padding="6dp"
+                    android:src="@drawable/outline_photo_camera_24" />
+
+                <ImageView
+                    android:id="@+id/sendMessage"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:padding="6dp"
+                    android:src="@drawable/baseline_send_24" />
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/micEnable"
+                android:src="@drawable/mic_icon"
+                app:civ_circle_background_color="@color/reviceTextColor" />
+
+        </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
