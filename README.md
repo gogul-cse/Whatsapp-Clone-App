@@ -16,14 +16,14 @@
 - 🛠️ Tech Stack
 ---
 ## Android (Frontend)
--Kotlin
--MVVM Architecture
--LiveData / StateFlow
--ViewModel
--RecyclerView
--Coroutines
+- Kotlin
+- MVVM Architecture
+- LiveData / StateFlow
+- ViewModel
+- RecyclerView
+- Coroutines
 
 ## Firebase (Backend)
--Firebase Authentication
--Cloud Firestore
--Firebase Cloud Messaging (FCM)
+- Firebase Authentication
+- Cloud Firestore
+- Firebase Cloud Messaging (FCM)
