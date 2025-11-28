@@ -27,3 +27,9 @@
 - Firebase Authentication
 - Cloud Firestore
 - Firebase Cloud Messaging (FCM)
+
+<img width="1919" height="1006" alt="Screenshot 2025-11-06 151528" src="https://github.com/user-attachments/assets/e4392c21-fde2-40c8-9121-046119e009a9" />
+
+<img width="905" height="814" alt="image" src="https://github.com/user-attachments/assets/3484626a-8d12-4dd4-8e7e-589ccd20439d" />
+
+
